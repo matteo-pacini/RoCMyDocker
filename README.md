@@ -26,6 +26,7 @@ The RoCMyDocker includes the following Dockerfiles for different environments:
 
 1. [Base Image](./base/README.md)
 2. [Automatic1111 WebUI](./automatic1111/README.md)
+2. [Kohya's GUI](./kohyas-gui/README.md)
 
 ## 💡 Usage
 

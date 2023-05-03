@@ -19,7 +19,7 @@ if [ ! -d "stable-diffusion-webui" ]; then
     python3 -m venv venv
     source venv/bin/activate
     pip install --upgrade pip wheel
-    pip install torch torchvision --index-url "https://d21usjoq99fcb9.cloudfront.net/whl/rocm${ROCM_VERSION}"
+    pip install torch torchvision --index-url "https://download.pytorch.org/whl/rocm${ROCM_VERSION}"
     pip install -r requirements.txt
     deactivate
     cd /workdir || exit 1

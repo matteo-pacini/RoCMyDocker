@@ -27,6 +27,6 @@ fi
 
 cd stable-diffusion-webui || exit 1
 source venv/bin/activate
-python3 launch.py --listen $EXTRA_ARGS
+python3 launch.py --listen --enable-insecure-extension-access $EXTRA_ARGS
 
 '

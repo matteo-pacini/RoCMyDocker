@@ -10,7 +10,7 @@ To run the Docker container, use the following command:
 docker run -it --rm --ipc=host -p 7860:7860 --shm-size 8G \
                     --device=/dev/kfd --device=/dev/dri --group-add=video \
                     --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
-                    -v "$HOME/workdir:/workdir" zi0p4tch088/rocmydocker-automatic1111:6fbd85 [EXTRA_ARGS]
+                    -v "$HOME/workdir:/workdir" zi0p4tch088/rocmydocker-automatic1111:5ab7f21 [EXTRA_ARGS]
 ```
 
 The entrypoint script downloads Automatic1111's code into the `/workdir` volume. 

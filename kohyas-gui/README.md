@@ -10,6 +10,7 @@ To run the Docker container, use the following command:
 docker run -it --rm --ipc=host -p 7860:7860 --shm-size 8G \
                     --device=/dev/kfd --device=/dev/dri --group-add=video \
                     --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+                    -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix \
                     -v "$HOME/workdir:/workdir" zi0p4tch088/rocmydocker-kohyas-gui:21.5.7 [EXTRA_ARGS]
 ```
 

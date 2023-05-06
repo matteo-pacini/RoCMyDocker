@@ -3,7 +3,7 @@ FROM zi0p4tch088/rocmydocker-base:5.4.2
 VOLUME [ "/workdir" ]
 
 ARG ROCM_VERSION=5.4.2
-ARG AUTOMATIC1111_COMMIT=6fbd85dd0c0dffc06560bff91f4c4b65e441ca5f
+ARG AUTOMATIC1111_COMMIT=5ab7f213bec2f816f9c5644becb32eb72c8ffb89
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ffmpeg && \
   apt-get clean && \
